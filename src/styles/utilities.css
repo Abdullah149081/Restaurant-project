@@ -2,4 +2,9 @@
   .r-border {
     border: 1.5px solid #0a5348;
   }
+  .r-banner-img {
+    background-image: url("../assets/bg/Rectangle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

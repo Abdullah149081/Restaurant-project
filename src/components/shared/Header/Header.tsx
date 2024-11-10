@@ -39,9 +39,9 @@ const Header = async () => {
     },
   ];
   return (
-    <Container className="sticky top-3">
+    <Container className="sticky top-0 z-50 bg-res-primary">
       {/* logo */}
-      <div className="relative z-0 my-8 flex items-center justify-between">
+      <div className="relative z-0 my-6 flex items-center justify-between py-2">
         <div className="flex items-center justify-start gap-[60px]">
           <div className="flex items-center justify-center gap-1.5">
             <Image src={assets.svgs.logo} alt="" />

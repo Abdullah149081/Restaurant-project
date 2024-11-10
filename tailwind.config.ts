@@ -1,4 +1,3 @@
-import { poppins, roboto } from "@/app/layout";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -78,7 +77,9 @@ const config = {
         poppins: ["Poppins", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        bebas_Neue: ["Bebas Neue", "sans-serif"],
       },
+      
     },
   },
   plugins: [require("tailwindcss-animate")],
