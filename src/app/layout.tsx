@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {
   Bebas_Neue as BebasNeue,
   Inter,
+  Open_Sans as OpenSans,
   Poppins,
   Raleway,
   Roboto,
@@ -13,6 +14,7 @@ export const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 export const raleway = Raleway({ subsets: ["latin"], weight: "400" });
 export const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 export const bebasNeue = BebasNeue({ subsets: ["latin"], weight: "400" });
+export const openSans = OpenSans({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Restaurant",

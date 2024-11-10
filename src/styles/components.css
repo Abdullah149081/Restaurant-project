@@ -3,6 +3,6 @@
     @apply mx-auto max-w-[1320px] px-[30px] lg:px-8 2xl:px-0;
   }
   .r-my {
-    @apply my-[120px];
+    @apply my-8 lg:my-[120px];
   }
 }

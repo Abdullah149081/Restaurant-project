@@ -78,8 +78,8 @@ const config = {
         raleway: ["Raleway", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         bebas_Neue: ["Bebas Neue", "sans-serif"],
+        open_Sans: ["Open Sans", "sans-serif"],
       },
-      
     },
   },
   plugins: [require("tailwindcss-animate")],

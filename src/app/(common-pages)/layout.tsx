@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div>
       <Header />
-      <div className="min-h-[calc(100vh-168px)]"> {children}</div>
+      <div> {children}</div>
       <Footer />
     </div>
   );
