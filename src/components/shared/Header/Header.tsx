@@ -39,7 +39,7 @@ const Header = async () => {
     },
   ];
   return (
-    <Container className="sticky top-0 z-50 bg-res-primary">
+    <Container className="sticky top-0 z-50 hidden bg-res-primary lg:block">
       {/* logo */}
       <div className="relative z-0 my-6 flex items-center justify-between py-2">
         <div className="flex items-center justify-start gap-[60px]">

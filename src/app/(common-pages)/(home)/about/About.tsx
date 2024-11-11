@@ -1,8 +1,8 @@
 "use client";
 
-import Container from "@/components/ui/container";
 import assets from "@/assets";
 import { Button } from "@/components/ui/button";
+import Container from "@/components/ui/container";
 import Image from "next/image";
 import { useState } from "react";
 import AboutBanner from "./AboutBanner";
@@ -52,10 +52,10 @@ const About = () => {
 
   return (
     <Container className="r-my">
-      <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:gap-0">
+      <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:gap-20">
         <AboutBanner />
-        {/*  */}
-        <div className="flex flex-col items-start justify-start gap-8 lg:w-[624px]">
+
+        <div className="flex flex-col items-start justify-start gap-8 lg:mt-0 lg:w-[624px]">
           <div className="flex items-center justify-start gap-4 self-stretch border-b border-[#b52b1d]">
             {buttonTabs.map((tab) => (
               <Button
@@ -73,7 +73,7 @@ const About = () => {
           </div>
 
           <div className="flex flex-col gap-[18px]">
-            <h2 className="font-bebas_Neue text-[62px] font-bold leading-[62px] text-[#181818]">
+            <h2 className="font-bebas_Neue text-[40px] font-bold leading-[48px] text-[#181818] lg:text-[62px] lg:leading-[62px]">
               {tabContent[activeTab].title}
             </h2>
             <p className="font-roboto text-base font-normal leading-relaxed text-[#333333]">
@@ -81,18 +81,18 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex items-start justify-start gap-8 self-stretch">
+          <div className="flex items-start justify-start gap-4 self-stretch lg:gap-8">
             <div>
               <Button className="h-full px-6 py-4">About More</Button>
             </div>
-            <div className="flex items-center justify-center gap-2 py-4 pr-6">
+            <div className="flex items-center justify-center gap-2 py-4 lg:pr-6">
               <Image
                 src={assets.svgs.callAlt}
                 alt="callAlt"
                 width={24}
                 height={24}
               />
-              <div className="text-center font-roboto text-lg font-bold uppercase leading-normal text-[#091325]">
+              <div className="text-center font-roboto text-sm font-bold uppercase leading-normal text-[#091325] lg:text-lg">
                 +88 3426 739 485
               </div>
             </div>

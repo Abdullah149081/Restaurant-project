@@ -7,4 +7,16 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .r-about-banner-img {
+    background-image: url("../assets/images/banner1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+
+    @media screen and (max-width: 768px) {
+      background-image: url("../assets/images/banner1_mobile.png");
+      padding-bottom: 158px;
+      background-size: auto;
+    }
+  }
 }
