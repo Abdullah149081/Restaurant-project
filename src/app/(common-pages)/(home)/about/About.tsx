@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
 import Image from "next/image";
 import { useState } from "react";
+import MediaQuery from "react-responsive";
 import AboutBanner from "./AboutBanner";
+import AboutCard from "./AboutCard";
 
 const buttonTabs = [
   {
@@ -51,55 +53,66 @@ const About = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <Container className="r-my">
-      <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:gap-20">
-        <AboutBanner />
+    <div className="relative">
+      <Container className="r-my">
+        <div className="flex flex-col gap-[50px] lg:gap-[74px]">
+          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:gap-20">
+            <AboutBanner />
 
-        <div className="flex flex-col items-start justify-start gap-8 lg:mt-0 lg:w-[624px]">
-          <div className="flex items-center justify-start gap-4 self-stretch border-b border-[#b52b1d]">
-            {buttonTabs.map((tab) => (
-              <Button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`font-roboto text-sm font-medium ${
-                  activeTab === tab.id
-                    ? "bg-[#b52b1d] text-white"
-                    : "bg-transparent text-[#333333]"
-                }`}
-              >
-                {tab.name}
-              </Button>
-            ))}
-          </div>
+            <div className="flex flex-col items-start justify-start gap-8 lg:mt-0 lg:w-[624px]">
+              <div className="flex items-center justify-start gap-4 self-stretch border-b border-[#b52b1d]">
+                {buttonTabs.map((tab) => (
+                  <Button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`font-roboto text-sm font-medium ${
+                      activeTab === tab.id
+                        ? "bg-[#b52b1d] text-white"
+                        : "bg-transparent text-[#333333]"
+                    }`}
+                  >
+                    {tab.name}
+                  </Button>
+                ))}
+              </div>
 
-          <div className="flex flex-col gap-[18px]">
-            <h2 className="font-bebas_Neue text-[40px] font-bold leading-[48px] text-[#181818] lg:text-[62px] lg:leading-[62px]">
-              {tabContent[activeTab].title}
-            </h2>
-            <p className="font-roboto text-base font-normal leading-relaxed text-[#333333]">
-              {tabContent[activeTab].content}
-            </p>
-          </div>
+              <div className="flex flex-col gap-[18px]">
+                <h2 className="font-bebas_Neue text-[40px] font-bold leading-[48px] text-[#181818] lg:text-[62px] lg:leading-[62px]">
+                  {tabContent[activeTab].title}
+                </h2>
+                <p className="font-roboto text-base font-normal leading-relaxed text-[#333333]">
+                  {tabContent[activeTab].content}
+                </p>
+              </div>
 
-          <div className="flex items-start justify-start gap-4 self-stretch lg:gap-8">
-            <div>
-              <Button className="h-full px-6 py-4">About More</Button>
-            </div>
-            <div className="flex items-center justify-center gap-2 py-4 lg:pr-6">
-              <Image
-                src={assets.svgs.callAlt}
-                alt="callAlt"
-                width={24}
-                height={24}
-              />
-              <div className="text-center font-roboto text-sm font-bold uppercase leading-normal text-[#091325] lg:text-lg">
-                +88 3426 739 485
+              <div className="flex items-start justify-start gap-4 self-stretch lg:gap-8">
+                <div>
+                  <Button className="h-full px-6 py-4">About More</Button>
+                </div>
+                <div className="flex items-center justify-center gap-2 py-4 lg:pr-6">
+                  <Image
+                    src={assets.svgs.callAlt}
+                    alt="callAlt"
+                    width={24}
+                    height={24}
+                  />
+                  <div className="text-center font-roboto text-sm font-bold uppercase leading-normal text-[#091325] lg:text-lg">
+                    +88 3426 739 485
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <AboutCard />
         </div>
-      </div>
-    </Container>
+      </Container>
+
+      <MediaQuery minWidth={1024}>
+        <div className="absolute -bottom-10 right-0">
+          <Image src={assets.images.bowlWhiteImg} alt="bowlWhiteImg" />
+        </div>
+      </MediaQuery>
+    </div>
   );
 };
 
