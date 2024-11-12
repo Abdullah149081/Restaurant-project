@@ -1,3 +1,4 @@
+import footer from "@/assets/bg/Footer.png";
 import Banner1 from "@/assets/images/banner1.png";
 import bannerImg from "@/assets/images/banner_img.png";
 import bowlWhiteImg from "@/assets/images/bowl-white-horizontal.png";
@@ -41,6 +42,9 @@ const assets = {
     bag,
     medal,
     packageIcon,
+  },
+  bg: {
+    footer,
   },
 };
 
