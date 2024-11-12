@@ -15,8 +15,14 @@
 
     @media screen and (max-width: 768px) {
       background-image: url("../assets/images/banner1_mobile.png");
-      padding-bottom: 158px;
+      padding-bottom: 9.875rem;
       background-size: auto;
     }
+  }
+  .footer-bg {
+    background-image: url("../assets/bg/Footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45.0625rem;
   }
 }
