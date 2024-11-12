@@ -1,7 +1,11 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable no-shadow */
+/* eslint-disable consistent-return */
+/* eslint-disable react/jsx-no-constructed-context-values */
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react";
-import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import * as React from "react";
 
 // import AutoScroll from "embla-carousel-auto-scroll";
@@ -19,8 +23,6 @@ type CarouselProps = {
   opts?: CarouselOptions;
   plugins?: CarouselPlugin;
   orientation?: "horizontal" | "vertical";
-  // autoPlay?: number;
-  // autoScroll?: number;
   setApi?: (api: CarouselApi) => void;
 };
 

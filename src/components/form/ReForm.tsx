@@ -1,3 +1,5 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { Form } from "../ui/form";
 

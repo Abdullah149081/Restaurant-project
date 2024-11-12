@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-unused-vars */
 import type { Metadata } from "next";
 import {
   Bebas_Neue as BebasNeue,
@@ -10,11 +12,11 @@ import {
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-export const poppins = Poppins({ subsets: ["latin"], weight: "400" });
-export const raleway = Raleway({ subsets: ["latin"], weight: "400" });
-export const roboto = Roboto({ subsets: ["latin"], weight: "400" });
-export const bebasNeue = BebasNeue({ subsets: ["latin"], weight: "400" });
-export const openSans = OpenSans({ subsets: ["latin"], weight: "400" });
+const poppins = Poppins({ subsets: ["latin"], weight: "400" });
+const raleway = Raleway({ subsets: ["latin"], weight: "400" });
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
+const bebasNeue = BebasNeue({ subsets: ["latin"], weight: "400" });
+const openSans = OpenSans({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Restaurant",
@@ -23,9 +25,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
