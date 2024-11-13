@@ -47,7 +47,7 @@ const foods = [
 
 const PopularFood = () => {
   return (
-    <div className="r-my relative bg-[rgb(251,247,242)]">
+    <div className="relative mt-8 bg-[#fbf7f2] lg:mt-[120px]">
       <Container className="py-8 pb-[84px] lg:py-[120px]">
         <TitleSubTitle
           title="Popular Food"

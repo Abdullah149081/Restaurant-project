@@ -1,6 +1,7 @@
 import Banner from "@/components/shared/Header/Banner";
 
 import About from "./about/About";
+import BookTable from "./book/BookTable";
 import PopularFood from "./popularFood/PopularFood";
 
 const Page = () => {
@@ -11,6 +12,7 @@ const Page = () => {
       </div>
       <About />
       <PopularFood />
+      <BookTable />
     </div>
   );
 };

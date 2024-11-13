@@ -2,33 +2,20 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 
 import React from "react";
 import { useFormContext } from "react-hook-form";
-import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
 
 type InputProps = {
-  type: string;
   name: string;
-  label?: string;
   placeholder?: string;
-  disabled?: boolean;
   className?: string;
-  labelClassName?: string;
 };
 
-const ReInput = ({
-  type,
-  name,
-  label,
-  placeholder,
-  disabled,
-  className,
-  labelClassName,
-}: InputProps) => {
+const ReTextarea = ({ name, placeholder, className }: InputProps) => {
   const { control } = useFormContext();
 
   return (
@@ -37,14 +24,11 @@ const ReInput = ({
       name={name}
       render={({ field }) => (
         <FormItem>
-          {label && <FormLabel className={labelClassName}>{label}</FormLabel>}
           <FormControl className="w-full">
-            <Input
-              type={type}
-              className={className}
+            <Textarea
               placeholder={placeholder}
+              className={className}
               {...field}
-              disabled={disabled}
             />
           </FormControl>
           <FormMessage />
@@ -54,12 +38,9 @@ const ReInput = ({
   );
 };
 
-ReInput.defaultProps = {
+ReTextarea.defaultProps = {
   placeholder: "",
-  disabled: false,
   className: "",
-  labelClassName: "",
-  label: "",
 };
 
-export default ReInput;
+export default ReTextarea;

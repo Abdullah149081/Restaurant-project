@@ -5,4 +5,7 @@
   .r-my {
     @apply my-8 lg:my-[120px];
   }
+  .r-input {
+    @apply border border-gray-200 px-4 py-3 font-roboto text-sm font-normal leading-snug text-white;
+  }
 }

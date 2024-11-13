@@ -39,7 +39,9 @@ const ReForm = ({
 
   return (
     <Form {...methods}>
-      <form onSubmit={handleSubmit(submit)}>{children}</form>
+      <form className="w-full" onSubmit={handleSubmit(submit)}>
+        {children}
+      </form>
     </Form>
   );
 };
