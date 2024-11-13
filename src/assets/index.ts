@@ -1,4 +1,8 @@
 import footer from "@/assets/bg/Footer.png";
+import fb from "@/assets/icon/facebook-circle.svg";
+import instagram from "@/assets/icon/instagram-round.svg";
+import ln from "@/assets/icon/linkedin-round.svg";
+import tw from "@/assets/icon/twitter-round-new-alt.svg";
 import Banner1 from "@/assets/images/banner1.png";
 import bannerImg from "@/assets/images/banner_img.png";
 import bowlWhiteImg from "@/assets/images/bowl-white-horizontal.png";
@@ -30,6 +34,12 @@ const assets = {
     pizza,
     topViewBell,
     sandwich,
+  },
+  icons: {
+    fb,
+    instagram,
+    ln,
+    tw,
   },
   svgs: {
     logo,
