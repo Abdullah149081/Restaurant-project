@@ -96,9 +96,9 @@ const About = () => {
                     width={24}
                     height={24}
                   />
-                  <div className="text-center font-roboto text-sm font-bold uppercase leading-normal text-[#091325] lg:text-lg">
+                  <p className="text-center font-roboto text-sm font-bold uppercase leading-normal text-[#091325] lg:text-lg">
                     +88 3426 739 485
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>

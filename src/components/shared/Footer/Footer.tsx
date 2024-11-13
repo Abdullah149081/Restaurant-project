@@ -87,7 +87,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* icon */}
           <div className="flex flex-col items-center justify-start gap-4 lg:gap-[25px]">
             <div className="flex items-start justify-start gap-[16.16px] lg:gap-6">
               {socialMedia.map((data) => (

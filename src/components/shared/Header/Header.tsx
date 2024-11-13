@@ -40,8 +40,7 @@ const Header = async () => {
   ];
   return (
     <Container className="sticky top-0 z-50 hidden rounded-b-sm bg-res-primary px-0.5 lg:block">
-      {/* logo */}
-      <div className="relative z-0 my-6 flex items-center justify-between py-2">
+      <header className="relative z-0 my-6 flex items-center justify-between py-2">
         <div className="flex items-center justify-start gap-[60px]">
           <div className="flex items-center justify-center gap-1.5">
             <Image src={assets.svgs.logo} alt="" />
@@ -54,7 +53,7 @@ const Header = async () => {
               </span>
             </p>
           </div>
-          <div className="inline-flex h-[18px] items-start justify-start gap-10">
+          <nav className="inline-flex h-[18px] items-start justify-start gap-10">
             {nabVar.map((item) => (
               <Link
                 key={item.id}
@@ -64,10 +63,10 @@ const Header = async () => {
                 {item.name}
               </Link>
             ))}
-          </div>
+          </nav>
         </div>
         <Button>Book a table</Button>
-      </div>
+      </header>
     </Container>
   );
 };

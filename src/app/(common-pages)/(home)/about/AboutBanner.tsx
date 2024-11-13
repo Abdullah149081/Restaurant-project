@@ -17,10 +17,10 @@ const AboutBanner = () => {
               50+
             </div>
           </div>
-          <div className="font-open_Sans text-[8.56px] font-semibold leading-3 text-[#181818] lg:text-base lg:leading-normal">
+          <p className="font-open_Sans text-[8.56px] font-semibold leading-3 text-[#181818] lg:text-base lg:leading-normal">
             Market <br />
             Experiences
-          </div>
+          </p>
         </div>
       </div>
     </div>
