@@ -3,32 +3,32 @@
     border: 1.5px solid #0a5348;
   }
   .r-banner-img {
-    background-image: url("../assets/bg/Rectangle.png");
+    background-image: url("../assets/bg/Rectangle.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
   .r-about-banner-img {
-    background-image: url("../assets/images/banner1.png");
+    background-image: url("../assets/images/banner1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 0;
 
     @media screen and (max-width: 768px) {
-      background-image: url("../assets/images/banner1_mobile.png");
+      background-image: url("../assets/images/banner1_mobile.webp");
       padding-bottom: 9.875rem;
       background-size: auto;
     }
   }
 
   .book-table-bg {
-    background-image: url("../assets/bg/FrameBook.png");
+    background-image: url("../assets/bg/FrameBook.webp");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
   }
 
   .footer-bg {
-    background-image: url("../assets/bg/Footer.png");
+    background-image: url("../assets/bg/Footer.webp");
     background-size: cover;
     background-repeat: no-repeat;
     height: 45.0625rem;
