@@ -10,6 +10,7 @@ import {
 import Container from "@/components/ui/container";
 
 import assets from "@/assets";
+import TitleSubTitle from "@/components/ui/titleSubTitle";
 import AutoScroll from "embla-carousel-auto-scroll";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
@@ -48,17 +49,10 @@ const PopularFood = () => {
   return (
     <div className="r-my relative bg-[rgb(251,247,242)]">
       <Container className="py-8 pb-[84px] lg:py-[120px]">
-        <div className="flex flex-col items-start justify-start gap-4">
-          <div className="flex items-center justify-start gap-2.5 self-stretch">
-            <div className="size-2.5 bg-[#bd1f17]" />
-            <p className="font-roboto text-base font-bold leading-relaxed text-[#bd1f17] lg:text-xl lg:leading-loose">
-              Crispy, Every Bite Taste
-            </p>
-          </div>
-          <h2 className="self-stretch font-bebas_Neue text-[40px] font-bold leading-[48px] tracking-wide text-[#181818] lg:text-[62px] lg:leading-[62px]">
-            POPULAR FOOD ITEMS
-          </h2>
-        </div>
+        <TitleSubTitle
+          title="Popular Food"
+          subtitle="Crispy, Every Bite Taste"
+        />
         <Carousel
           plugins={[
             Autoplay({
