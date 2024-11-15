@@ -2,6 +2,7 @@ import Banner from "@/components/shared/Header/Banner";
 
 import About from "./about/About";
 import BookTable from "./book/BookTable";
+import Customers from "./customers/Customers";
 import PopularFood from "./popularFood/PopularFood";
 
 const Page = () => {
@@ -13,6 +14,7 @@ const Page = () => {
       <About />
       <PopularFood />
       <BookTable />
+      <Customers />
     </div>
   );
 };
