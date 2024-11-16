@@ -14,7 +14,7 @@ const Header = () => {
       <header className="relative z-0 my-5 flex items-center justify-between lg:my-6 lg:py-2">
         <div className="flex items-center justify-start gap-[60px]">
           <div className="flex items-center justify-center gap-1.5">
-            <Image src={assets.svgs.logo} alt="" />
+            <Image src={assets.svgs.logo} alt="logo" />
             <p>
               <span className="font-poppins text-[28.44px] font-semibold leading-7 text-white">
                 Restau
