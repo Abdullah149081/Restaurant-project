@@ -7,15 +7,15 @@ import PopularFood from "./popularFood/PopularFood";
 
 const Page = () => {
   return (
-    <div>
-      <div className="relative">
+    <>
+      <div className="relative pt-8 lg:pt-0">
         <Banner />
       </div>
       <About />
       <PopularFood />
       <BookTable />
       <Customers />
-    </div>
+    </>
   );
 };
 

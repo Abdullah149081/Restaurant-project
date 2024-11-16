@@ -37,4 +37,13 @@
       height: 100%;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .nav-underline:hover {
+      text-decoration: underline;
+      text-decoration-color: #febf00;
+      text-decoration-thickness: 0.125rem;
+      text-underline-offset: 0.25rem;
+    }
+  }
 }

@@ -12,8 +12,9 @@ import frenchFries from "@/assets/images/french-fries.webp";
 import friedShrimp from "@/assets/images/fried-shrimp.webp";
 import pizza from "@/assets/images/pizza.webp";
 import sandwich from "@/assets/images/sandwich.webp";
+import tomato from "@/assets/images/tomato.webp";
 import topViewBell from "@/assets/images/top-view-bellpng.webp";
-import video from "@/assets/images/Video.png";
+import video from "@/assets/images/Video.webp";
 import bag from "@/assets/svgs/bag.svg";
 import callAlt from "@/assets/svgs/call-alt.svg";
 import circleWhite from "@/assets/svgs/ciccle_white.svg";
@@ -39,6 +40,7 @@ const assets = {
     sandwich,
     customers,
     video,
+    tomato,
   },
   icons: {
     fb,
